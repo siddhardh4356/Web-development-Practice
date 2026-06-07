@@ -1,0 +1,41 @@
+p{
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: black;
+}
+
+h4{
+    text-align: center;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+div{
+    text-align: center;
+}
+
+textarea{
+    text-align: center;
+    color: black;
+}
+
+button{
+    background-color: white;
+    color: blueviolet;
+}
+
+span{
+    text-decoration: underline;
+}

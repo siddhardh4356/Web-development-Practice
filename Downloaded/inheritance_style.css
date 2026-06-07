@@ -1,0 +1,12 @@
+div{
+    background-color: yellow;
+}
+
+form{
+    background-color: red;
+}
+
+button:hover{
+    color: white;
+    background-color: red;
+}

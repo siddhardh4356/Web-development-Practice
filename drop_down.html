@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down</title>
+</head>
+<body>
+    <form action="/server">
+        choose your profession
+        <select name="profession" id="profession">
+            <option value=>select your option</option>
+            <option value="student">student</option>
+            <option value="Professor">Professor</option>
+            <option value="Asst Professor">Asst Professor</option>
+        </select>
+        <br>
+        <label for="vol">Select your Volume level:</label>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="80">
+        <br>
+        <label for="feedback">Please give your valuable feedback</label>
+        <textarea name="feedback" id="feedback" placeholder="write your feedback here"></textarea>
+        <button>Submit</button>
+
+    </form>
+    
+</body>
+</html>

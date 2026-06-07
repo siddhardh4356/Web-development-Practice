@@ -1,0 +1,12 @@
+h2{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    letter-spacing: 0px;
+}
+
+p{
+    line-height: normal;
+    text-align: start;
+    font-size: 20px;
+}
