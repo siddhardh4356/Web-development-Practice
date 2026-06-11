@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My animation</title>
+    <style>
+        .container{
+            width: 300px;
+            border: 2px solid grey;
+            background-color: lightsalmon;
+            font-weight:bold;
+            box-shadow: 10px;
+        }
+
+        .inner{
+            position: relative;
+            height: 450px;
+            width: 300px;
+            cursor:pointer;
+        }
+
+        .poster, .trailer{
+            width: 100%;
+            height: 100%;
+        }
+
+        .trailer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .inner:hover .trailer{
+            opacity: 1;
+        }
+
+        .inner:hover .poster{
+            opacity: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <img class="poster" src="https://wallpaperaccess.com/full/26547801.jpg" alt="poster">
+            <video width="300" height="450" muted autoplay loop>
+                <source src="iot2.mp4" type="video/mp4">
+            </video>
+        </div>
+        Movie: (Surya's Karupu)
+        <p>Rating:9/10</p>
+        Running Succesfully...
+    </div>
+</body>
+</html>

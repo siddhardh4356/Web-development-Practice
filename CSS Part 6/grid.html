@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 600px;
+            background-color: black;
+            display: grid;
+            /* grid-template-rows: auto auto auto auto ;
+            grid-template-columns: auto auto auto auto; */
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            grid-gap: 10px;
+        }
+
+        .item{
+            /* width: 100px;
+            height: 50px; */
+            background-color: greenyellow;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .one{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1/3;
+        }
+
+        #two{
+            grid-row: 1/3;
+        }
+
+        @media (min-width:200px) and (max-width:600px){
+            h2{
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid playground</h1>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item" id="two">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <h2>This is a paragraph</h2>
+</body>
+</html>
